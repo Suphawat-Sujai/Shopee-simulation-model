@@ -1,11 +1,24 @@
 const express = require("express");
 const path = require("path");
 const app = express();
+const exhdb = require('express-handlebars');
 
 const logger = require("./middleware/logger");
 
 // Init middleware
 // app.use(logger);
+
+// app.engine('handlebars', exhdb ({defaultLayout: 'main'}));
+// app.set('view engine', 'handlebars');
+
+// // home page routes
+// app.get('/', (req ,res) => {
+//     res.render('index');
+// })
+
+// body pares middleware
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
 
 app.use('/api/users', require('./routes/api/users'));
 
