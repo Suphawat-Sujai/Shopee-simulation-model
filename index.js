@@ -11,7 +11,7 @@ const logger = require("./middleware/logger");
 // app.engine('handlebars', exhdb ({defaultLayout: 'main'}));
 // app.set('view engine', 'handlebars');
 
-// // home page routes
+// home page routes
 // app.get('/', (req ,res) => {
 //     res.render('index');
 // })
@@ -26,7 +26,7 @@ app.use('/api/users', require('./routes/api/users'));
 //     res.sendFile(path.join(__dirname, 'public' ,'index.html'));
 // });
 
-app.use(express.static(path.join(__dirname, "public")));
+app.use(express.static(path.join(__dirname, "view/layouts")));
 
 const PORT = process.env.PORT || 5000;
 
