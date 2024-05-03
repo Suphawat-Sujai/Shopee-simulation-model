@@ -26,7 +26,6 @@ app.use('/api/users', require('./routes/api/users'));
 //     res.sendFile(path.join(__dirname, 'public' ,'index.html'));
 // });
 
-app.set('views', path.join(__dirname, 'views'));
 app.set('views', path.join(__dirname, 'views/main_page'));
 app.set('view engine', 'ejs');
 app.use(router)
