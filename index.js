@@ -27,6 +27,7 @@ app.use('/api/users', require('./routes/api/users'));
 // });
 
 app.set('views', path.join(__dirname, 'views'));
+app.set('views', path.join(__dirname, 'views/main_page'));
 app.set('view engine', 'ejs');
 app.use(router)
 app.use(express.static(path.join(__dirname, "public")));
