@@ -24,16 +24,10 @@
       }
 
       .logo a {
-        font-size: 24px;
+        font-size: 26px;
         font-weight: bold;
         text-decoration: none;
         color: #c73d3d;
-      }
-
-      .menu a {
-        margin-right: 20px;
-        text-decoration: none;
-        color: #333;
       }
 
       .search {
@@ -42,8 +36,8 @@
       }
 
       .search input {
-        padding: 8px;
-        width: 100%;
+        padding: 10px;
+        width: 90%;
       }
 
       .search button {
@@ -75,28 +69,56 @@
           margin: 10px 0;
         }
       }
+
+      .v-center {
+        align-items: center;
+        display: flex;
+      }
     </style>
   </head>
   <body>
+    <nav class="container-fluid topnav">
+      <div class="container mt-lg-2">
+        <div class="row">
+          <div class="col-3">
+            <div class="row">
+              <div class="col">Sell Center</div>
+              <div class="col">First Sell</div>
+              <div class="col">Download</div>
+            </div>
+          </div>
+          <div class="col-6"></div>
+          <div class="col-3">
+            <div class="row">
+              <div class="col">Notifications</div>
+              <div class="col text-md-center">Help</div>
+              <div class="col text-md-center">Login</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
     <nav class="topnav">
-      <div class="logo">
-        <a href="#">Your Logo</a>
-      </div>
-      <div class="menu">
-        <a href="#">Home</a>
-        <a href="#">Shop</a>
-        <a href="#">Categories</a>
-        <a href="#">Deals</a>
-        <!-- Add more menu items as needed -->
-      </div>
-      <div class="search">
-        <input type="text" placeholder="Search..." />
-        <button type="submit">Search</button>
-      </div>
-      <div class="user">
-        <a href="#">Login</a>
-        <a href="#">Cart</a>
-        <!-- Add more user-related items like profile, wishlist, etc. -->
+      <div class="container-lg">
+        <div class="row">
+          <div class="col-lg-1">
+            <div class="logo">
+              <a href="#">Shopee</a>
+            </div>
+          </div>
+          <div class="col-lg-10">
+            <form class="search mx-auto">
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="ลูกค้าใหม่ รับเลย โค้ดส่วนลด หรือโค้ดส่งฟรี" />
+                <button class="btn btn-primary" type="submit">Search</button>
+              </div>
+            </form>
+          </div>
+          <div class="col-lg-1">
+            <img src="../../pictures/png-clipart-shopping-cart-icon-product-return-shopping-cart-retail-supermarket-thumbnail.png" alt="Shopping Cart"/>
+          </div>
+        </div>
       </div>
     </nav>
   </body>
