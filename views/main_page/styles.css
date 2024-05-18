@@ -91,41 +91,50 @@
 }
 
 .image-recommend {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .name-more-category {
-    font-size: 1.5em;
-    height: 5rem;
-    padding:0 3rem;
-    display: flex;
-    align-items: center;
+  font-size: 1.5em;
+  height: 5rem;
+  padding: 0 3rem;
+  display: flex;
+  align-items: center;
 }
 
 .image-carousel {
-    overflow-x: auto;
-    white-space: nowrap;
-    padding:0 3rem;
+  overflow-x: hidden;
+  white-space: nowrap;
+  padding: 0 3rem;
 }
 
 .image-carousel-item-list-wrapper {
-    display: flex;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .box-item {
-    background-color: #ffffff;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-align: center;
-    white-space: normal; 
-    flex: 0 0 auto;
-    width: 150px;
-    height: 100px;
+  background-color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-align: center;
+  white-space: normal;
+  flex: 0 0 auto;
+  width: 150px;
+  height: 100px;
 }
 
 .box-item:hover {
-    background-color: #dfd8d8;
-    cursor: pointer;
+  background-color: #dfd8d8;
+  cursor: pointer;
 }
+
+ .card-item {
+  display: flex;
+  flex-wrap: wrap;
+  overflow-x: hidden;
+  gap: 45px;
+  padding-top: 40px;
+ }
